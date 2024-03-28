@@ -4,6 +4,7 @@ import {
   cilBell,
   cilCalculator,
   cilChartPie,
+  cilCheck,
   cilCursor,
   cilDescription,
   cilDrop,
@@ -24,6 +25,16 @@ const _nav = [
     badge: {
       color: 'info',
       text: 'NEW',
+    },
+  },
+  {
+    component: CNavItem,
+    name: 'Field Validation',
+    to: '/fieldvalidation',
+    icon: <CIcon icon={cilCheck} customClassName="nav-icon" />,
+    badge: {
+      color: 'info',
+      text: 'Test',
     },
   },
   {
