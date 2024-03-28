@@ -28,6 +28,16 @@ const _nav = [
   },
   {
     component: CNavTitle,
+    name: 'Playbook',
+  },
+  {
+    component: CNavItem,
+    name: 'Playbook',
+    to: '/playbook',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavTitle,
     name: 'Theme',
   },
   {
