@@ -2,6 +2,7 @@
     "name": "my-dashboard-app",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://joshhklee.github.io/big-a-gui/",
     "dependencies": {
         "@coreui/chartjs": "^4.0.0-rc.0",
         "@coreui/coreui": "^5.0.0-rc-2",
