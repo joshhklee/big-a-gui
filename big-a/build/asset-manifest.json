@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/big-a-gui/static/css/main.32f06d12.css",
-    "main.js": "/big-a-gui/static/js/main.a9b63062.js",
+    "main.js": "/big-a-gui/static/js/main.546cfff6.js",
     "static/css/7470.a9cb57a1.chunk.css": "/big-a-gui/static/css/7470.a9cb57a1.chunk.css",
-    "static/js/7470.a8365459.chunk.js": "/big-a-gui/static/js/7470.a8365459.chunk.js",
+    "static/js/7470.de60c5ef.chunk.js": "/big-a-gui/static/js/7470.de60c5ef.chunk.js",
     "static/js/4721.dd614918.chunk.js": "/big-a-gui/static/js/4721.dd614918.chunk.js",
     "static/js/3181.2e81b13b.chunk.js": "/big-a-gui/static/js/3181.2e81b13b.chunk.js",
     "static/js/7481.3776a6cb.chunk.js": "/big-a-gui/static/js/7481.3776a6cb.chunk.js",
     "static/js/113.92f12ed5.chunk.js": "/big-a-gui/static/js/113.92f12ed5.chunk.js",
     "static/js/9772.1d003276.chunk.js": "/big-a-gui/static/js/9772.1d003276.chunk.js",
     "static/js/3965.33c0e3ec.chunk.js": "/big-a-gui/static/js/3965.33c0e3ec.chunk.js",
-    "static/js/8861.74dded7c.chunk.js": "/big-a-gui/static/js/8861.74dded7c.chunk.js",
+    "static/js/8861.926f2e96.chunk.js": "/big-a-gui/static/js/8861.926f2e96.chunk.js",
     "static/js/532.8195afe9.chunk.js": "/big-a-gui/static/js/532.8195afe9.chunk.js",
     "static/js/4562.b6433c42.chunk.js": "/big-a-gui/static/js/4562.b6433c42.chunk.js",
     "static/js/9784.ae4b4ad2.chunk.js": "/big-a-gui/static/js/9784.ae4b4ad2.chunk.js",
@@ -55,7 +55,6 @@
     "static/js/8375.5bc2590d.chunk.js": "/big-a-gui/static/js/8375.5bc2590d.chunk.js",
     "static/js/1052.f8b6f8f9.chunk.js": "/big-a-gui/static/js/1052.f8b6f8f9.chunk.js",
     "static/js/2864.e521f58f.chunk.js": "/big-a-gui/static/js/2864.e521f58f.chunk.js",
-    "static/js/5695.82e32973.chunk.js": "/big-a-gui/static/js/5695.82e32973.chunk.js",
     "static/js/6944.0b589606.chunk.js": "/big-a-gui/static/js/6944.0b589606.chunk.js",
     "static/js/2346.717df60b.chunk.js": "/big-a-gui/static/js/2346.717df60b.chunk.js",
     "static/media/react.jpg": "/big-a-gui/static/media/react.83088efde08a5dedde9f.jpg",
@@ -70,16 +69,16 @@
     "static/media/6.jpg": "/big-a-gui/static/media/6.edefb235566ed72a7429.jpg",
     "index.html": "/big-a-gui/index.html",
     "main.32f06d12.css.map": "/big-a-gui/static/css/main.32f06d12.css.map",
-    "main.a9b63062.js.map": "/big-a-gui/static/js/main.a9b63062.js.map",
+    "main.546cfff6.js.map": "/big-a-gui/static/js/main.546cfff6.js.map",
     "7470.a9cb57a1.chunk.css.map": "/big-a-gui/static/css/7470.a9cb57a1.chunk.css.map",
-    "7470.a8365459.chunk.js.map": "/big-a-gui/static/js/7470.a8365459.chunk.js.map",
+    "7470.de60c5ef.chunk.js.map": "/big-a-gui/static/js/7470.de60c5ef.chunk.js.map",
     "4721.dd614918.chunk.js.map": "/big-a-gui/static/js/4721.dd614918.chunk.js.map",
     "3181.2e81b13b.chunk.js.map": "/big-a-gui/static/js/3181.2e81b13b.chunk.js.map",
     "7481.3776a6cb.chunk.js.map": "/big-a-gui/static/js/7481.3776a6cb.chunk.js.map",
     "113.92f12ed5.chunk.js.map": "/big-a-gui/static/js/113.92f12ed5.chunk.js.map",
     "9772.1d003276.chunk.js.map": "/big-a-gui/static/js/9772.1d003276.chunk.js.map",
     "3965.33c0e3ec.chunk.js.map": "/big-a-gui/static/js/3965.33c0e3ec.chunk.js.map",
-    "8861.74dded7c.chunk.js.map": "/big-a-gui/static/js/8861.74dded7c.chunk.js.map",
+    "8861.926f2e96.chunk.js.map": "/big-a-gui/static/js/8861.926f2e96.chunk.js.map",
     "532.8195afe9.chunk.js.map": "/big-a-gui/static/js/532.8195afe9.chunk.js.map",
     "4562.b6433c42.chunk.js.map": "/big-a-gui/static/js/4562.b6433c42.chunk.js.map",
     "9784.ae4b4ad2.chunk.js.map": "/big-a-gui/static/js/9784.ae4b4ad2.chunk.js.map",
@@ -124,12 +123,11 @@
     "8375.5bc2590d.chunk.js.map": "/big-a-gui/static/js/8375.5bc2590d.chunk.js.map",
     "1052.f8b6f8f9.chunk.js.map": "/big-a-gui/static/js/1052.f8b6f8f9.chunk.js.map",
     "2864.e521f58f.chunk.js.map": "/big-a-gui/static/js/2864.e521f58f.chunk.js.map",
-    "5695.82e32973.chunk.js.map": "/big-a-gui/static/js/5695.82e32973.chunk.js.map",
     "6944.0b589606.chunk.js.map": "/big-a-gui/static/js/6944.0b589606.chunk.js.map",
     "2346.717df60b.chunk.js.map": "/big-a-gui/static/js/2346.717df60b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32f06d12.css",
-    "static/js/main.a9b63062.js"
+    "static/js/main.546cfff6.js"
   ]
 }

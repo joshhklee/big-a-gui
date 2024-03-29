@@ -6,25 +6,25 @@ function GenerateAndViewYaml() {
   const [createdObject, setCreatedObject] = useState(null);
   const [isPosting, setIsPosting] = useState(false);
 
-  const handleButtonClick = async () => {
-    setIsPosting(true);
+  // const handleButtonClick = async () => {
+  //   setIsPosting(true);
 
     // Replace with your actual endpoint and data structure
-    const url = 'https://your-backend-endpoint.com/api/create';
-    const postData = {
-      // ... your data object to post
-    };
+  //   const url = 'https://your-backend-endpoint.com/api/create';
+  //   const postData = {
+  //     // ... your data object to post
+  //   };
 
-    try {
-      const response = await axios.post(url, postData);
-      setCreatedObject(response.data);
-    } catch (error) {
-      console.error('Error posting data:', error);
-      // Handle error appropriately
-    }
+  //   try {
+  //     const response = await axios.post(url, postData);
+  //     setCreatedObject(response.data);
+  //   } catch (error) {
+  //     console.error('Error posting data:', error);
+  //     // Handle error appropriately
+  //   }
 
-    setIsPosting(false);
-  };
+  //   setIsPosting(false);
+  // };
 
   return (
     <><CCard className="mb-4">
@@ -37,8 +37,8 @@ function GenerateAndViewYaml() {
             <dl className="row">
               <dt className="col-sm-3">
             <div>
-        <button onClick={handleButtonClick} disabled={isPosting}>
-          {isPosting ? 'Generating...' : 'Generate YAML'}
+        <button>
+          {'Generate YAML'}
         </button>
     </div>
               </dt>
