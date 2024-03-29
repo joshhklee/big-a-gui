@@ -13,22 +13,16 @@ jobs:
     - name: Checkout Source Code
       uses: actions/checkout@v2
 
-    - name: Setup Node
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'  # Specify your Node.js version
-
-    - name: Change to React App Directory
-      run: /home/runner/work/big-a-gui/big-a
-
+    - name: Remove Unwanted Folder
+      run: rm -rf build/big-a-template-for-learning
+    
     - name: Install Dependencies
       run: npm install
 
     - name: Build
       run: npm run build
 
-    - name: Remove Unwanted Folder
-      run: rm -rf build/big-a-template-for-learning
+    
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.4
