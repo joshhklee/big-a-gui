@@ -19,7 +19,9 @@ jobs:
         node-version: '14'  # Specify your Node.js version
 
     - name: Change to React App Directory
-      run: cd big-a-gui/big-a
+      run: |
+        cd big-a-gui/big-a
+        pwd  # Prints the current directory for debugging
 
     - name: Install Dependencies
       run: npm install
