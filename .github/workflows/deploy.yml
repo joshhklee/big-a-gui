@@ -1,0 +1,26 @@
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Source Code
+      uses: actions/checkout@v2
+
+    # ... other steps like setting up Node.js ...
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build
+      run: npm run build
+
+    - name: Remove Unwanted Folder
+      run: rm -rf build/big-a-template-for-learning
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: gh-pages
+        folder: build
+        token: ${{ secrets.GITHUB_TOKEN }}
+
