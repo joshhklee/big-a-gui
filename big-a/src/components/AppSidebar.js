@@ -12,8 +12,8 @@ import {
 import CIcon from '@coreui/icons-react'
 
 import { AppSidebarNav } from './AppSidebarNav'
-import { sygnet } from '../assets/brand/sygnet'
-import {BigaLogo} from './BigaLogo';
+import { BigaLogo } from './BigaLogo'
+
 // sidebar nav config
 import navigation from '../_nav'
 
@@ -36,7 +36,6 @@ const AppSidebar = () => {
       <CSidebarHeader className="border-bottom">
         <CSidebarBrand to="/">
           <CIcon customClassName="sidebar-brand-full" icon={BigaLogo} height={32} />
-          <CIcon customClassName="sidebar-brand-narrow" icon={sygnet} height={32} />
           <BigaLogo height={100} width={100} />
         </CSidebarBrand>
         <CCloseButton

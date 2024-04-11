@@ -1,8 +1,9 @@
 import React from 'react'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
-const FieldValidation = React.lazy(() => import('./views/fieldvalidation/FieldValidation'))
+const FieldValidation = React.lazy(() => import('./views/pages/fieldvalidation/FieldValidation'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
+const GenerateAndViewYaml = React.lazy(() => import('./views/pages/generateYaml/GenerateAndViewYaml'));
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
 // Base
@@ -54,6 +55,7 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
+  { path: '/playbook', name: 'Playbook', element: GenerateAndViewYaml },
   { path: '/fieldvalidation', name: 'FieldValidation', element: FieldValidation },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },

@@ -28,14 +28,24 @@ const _nav = [
     },
   },
   {
+    component: CNavTitle,
+    name: 'Playbook',
+  },
+  {
+    component: CNavItem,
+    name: 'Playbook',
+    to: '/playbook',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavTitle,
+    name: 'Field Validation',
+  },
+  {
     component: CNavItem,
     name: 'Field Validation',
     to: '/fieldvalidation',
     icon: <CIcon icon={cilCheck} customClassName="nav-icon" />,
-    badge: {
-      color: 'info',
-      text: 'Test',
-    },
   },
   {
     component: CNavTitle,
