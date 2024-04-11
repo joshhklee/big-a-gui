@@ -10,13 +10,13 @@ function GenerateAndViewYaml() {
     setIsPosting(true);
 
     // Replace with your actual endpoint and data structure
-    const url = 'https://your-backend-endpoint.com/api/create';
+    const url = 'http://127.0.0.1:8000/EC2/';
     const postData = {
       // ... your data object to post
     };
 
     try {
-      const response = await axios.post(url, postData);
+      const response = await axios.get(url);
       setCreatedObject(response.data);
     } catch (error) {
       console.error('Error posting data:', error);
@@ -52,7 +52,7 @@ function GenerateAndViewYaml() {
         </CCardHeader>
         <CCardBody>
         <p>
-          Below is the generated YAML from the earlier post call
+          Below is the generated YAML from the earlier get call
         </p>
         {createdObject && (
           <div>
