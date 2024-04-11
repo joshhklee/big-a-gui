@@ -22,13 +22,14 @@ function FieldValidation() {
         data: new URLSearchParams({ user_input: formData.host }),
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
       });
-      const result = response.data;
-      console.log(result);
-      if (result.success) {
+
+      if (response.status === 200 && !response.data.includes("error")) {
         alert('Form is valid!');
+        console.log(response.data); // Log success message
         setErrors({}); // Clear errors on success
       } else {
-        setErrors(result.errors || {}); 
+        console.log(response.data); // Log error message
+        setErrors({ host: response.data || "An error occurred" });
       }
     } catch (error) {
       console.error('Error posting data:', error);
@@ -40,7 +41,7 @@ function FieldValidation() {
     <CForm onSubmit={handleSubmit}>
       <div className="mb-3">
         <CFormLabel htmlFor="host">Host:</CFormLabel>
-        <CFormInput type="text" id="host" name="host" value={formData.host} onChange={handleChange} invalid={Boolean(errors.host)} />
+        <CFormInput type="text" id="host" name="host" value={formData.host} onChange={handleChange} isInvalid={Boolean(errors.host)} />
         {errors.host && <CAlert color="danger">{errors.host}</CAlert>}
       </div>
       <CButton type="submit" color="primary">Submit</CButton>
