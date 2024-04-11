@@ -4,6 +4,7 @@ import {
   cilBell,
   cilCalculator,
   cilChartPie,
+  cilCheck,
   cilCursor,
   cilDescription,
   cilDrop,
@@ -35,6 +36,16 @@ const _nav = [
     name: 'Playbook',
     to: '/playbook',
     icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavTitle,
+    name: 'Field Validation',
+  },
+  {
+    component: CNavItem,
+    name: 'Field Validation',
+    to: '/fieldvalidation',
+    icon: <CIcon icon={cilCheck} customClassName="nav-icon" />,
   },
   {
     component: CNavTitle,
