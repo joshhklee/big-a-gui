@@ -57,7 +57,7 @@ function GenerateAndViewYaml() {
         {createdObject && (
           <div>
             <h3>Created Object:</h3>
-            <pre>{JSON.stringify(createdObject, null, 2)}</pre>
+            <pre>{createdObject}</pre>
           </div>
       )}
         </CCardBody>
