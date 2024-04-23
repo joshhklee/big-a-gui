@@ -4,6 +4,7 @@ import { CCard, CCardHeader, CCardBody } from '@coreui/react'
 
 function GenerateAndViewYaml() {
   const [createdObject, setCreatedObject] = useState(null);
+  const [createdObject2, setCreatedObject2] = useState(null);
   const [isPosting, setIsPosting] = useState(false);
 
   const handleButtonClick = async () => {
@@ -24,6 +25,20 @@ function GenerateAndViewYaml() {
     }
 
     setIsPosting(false);
+  };
+
+  const handleCopyClick = (textToCopy) => {
+    navigator.clipboard.writeText(textToCopy);
+  };
+
+  const handlePaste = async () => {
+    try {
+      const textFromClipboard = await navigator.clipboard.readText();
+      setCreatedObject2(textFromClipboard);
+    } catch (error) {
+      console.error('Error pasting from clipboard:', error);
+      // Handle error appropriately
+    }
   };
 
   return (
@@ -58,11 +73,33 @@ function GenerateAndViewYaml() {
           <div>
             <h3>Created Object:</h3>
             <pre>{createdObject}</pre>
+            <button onClick={() => handleCopyClick(createdObject)}>Copy to Clipboard</button>
           </div>
       )}
         </CCardBody>
-      </CCard>  
-  </>
+      </CCard> 
+        <CCard className="mb-4">
+          <CCardHeader>
+            Modify Generated Yamal
+          </CCardHeader>
+          <CCardBody>
+          <p>
+          Below you can paste and modify the generated YAML
+          </p>
+            {/* Text input to modify the generated YAML */}
+            <textarea id="myTextarea" 
+            value={createdObject2} 
+            rows="20" 
+            cols="60" 
+            onChange={(e) => setCreatedObject2(e.target.value)}
+            ></textarea>
+            <div>
+              <button onClick={() => handleCopyClick(createdObject2)}>Copy to Clipboard</button>
+              <button onClick={handlePaste}>Paste from Clipboard</button>
+            </div>
+          </CCardBody>
+        </CCard> 
+    </>
   );
 }
 
