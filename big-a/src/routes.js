@@ -52,12 +52,12 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
-const routes = [
+const routes = [ 
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/playbook', name: 'Playbook', element: GenerateAndViewYaml },
   { path: '/fieldvalidation', name: 'FieldValidation', element: FieldValidation },
-  { path: '/theme', name: 'Theme', element: Colors, exact: true },
+  { path: '/About Us/Goals', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },
   { path: '/base', name: 'Base', element: Cards, exact: true },

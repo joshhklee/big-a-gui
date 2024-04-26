@@ -1,91 +1,55 @@
-import React, { useEffect, useState, createRef } from 'react'
-import PropTypes from 'prop-types'
-import classNames from 'classnames'
-import { CRow, CCol, CCard, CCardHeader, CCardBody } from '@coreui/react'
-import { rgbToHex } from '@coreui/utils'
-import { DocsLink } from '../../../components'
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import { CRow, CCol, CCard, CCardHeader, CCardBody } from '@coreui/react';
+import { DocsLink } from '../../../components';
 
-const ThemeView = () => {
-  const [color, setColor] = useState('rgb(255, 255, 255)')
-  const ref = createRef()
-
-  useEffect(() => {
-    const el = ref.current.parentNode.firstChild
-    const varColor = window.getComputedStyle(el).getPropertyValue('background-color')
-    setColor(varColor)
-  }, [ref])
-
-  return (
-    <table className="table w-100" ref={ref}>
-      <tbody>
-        <tr>
-          <td className="text-body-secondary">HEX:</td>
-          <td className="font-weight-bold">{rgbToHex(color)}</td>
-        </tr>
-        <tr>
-          <td className="text-body-secondary">RGB:</td>
-          <td className="font-weight-bold">{color}</td>
-        </tr>
-      </tbody>
-    </table>
-  )
-}
-
-const ThemeColor = ({ className, children }) => {
-  const classes = classNames(className, 'theme-color w-75 rounded mb-3')
-  return (
-    <CCol xs={12} sm={6} md={4} xl={2} className="mb-4">
-      <div className={classes} style={{ paddingTop: '75%' }}></div>
-      {children}
-      <ThemeView />
-    </CCol>
-  )
-}
-
-ThemeColor.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-}
-
-const Colors = () => {
+// AboutUs component represents the "About Us" page
+const AboutUs = () => {
   return (
     <>
       <CCard className="mb-4">
         <CCardHeader>
-          Theme colors
-          <DocsLink href="https://coreui.io/docs/utilities/colors/" />
+          About Us
+          <DocsLink href="https://www.yourcompany.com/about-us" />
         </CCardHeader>
         <CCardBody>
+          <h2>Our Mission</h2>
+          <p>
+          Automate IT tasks, enabling organizations to streamline operations, reduce manual effort, and increase efficiency across infrastructure management.
+          </p>
+
+          <h2>Our History</h2>
+          <p>
+            Founded in 2024, our company has grown from a group project. Our journey is a testament to
+            our dedication and hard work.
+          </p>
+
+          <h2>Our Team</h2>
           <CRow>
-            <ThemeColor className="bg-primary">
-              <h6>Brand Primary Color</h6>
-            </ThemeColor>
-            <ThemeColor className="bg-secondary">
-              <h6>Brand Secondary Color</h6>
-            </ThemeColor>
-            <ThemeColor className="bg-success">
-              <h6>Brand Success Color</h6>
-            </ThemeColor>
-            <ThemeColor className="bg-danger">
-              <h6>Brand Danger Color</h6>
-            </ThemeColor>
-            <ThemeColor className="bg-warning">
-              <h6>Brand Warning Color</h6>
-            </ThemeColor>
-            <ThemeColor className="bg-info">
-              <h6>Brand Info Color</h6>
-            </ThemeColor>
-            <ThemeColor className="bg-light">
-              <h6>Brand Light Color</h6>
-            </ThemeColor>
-            <ThemeColor className="bg-dark">
-              <h6>Brand Dark Color</h6>
-            </ThemeColor>
+            <CCol xs={12} sm={6} md={4}>
+              <h4>Josh Lee</h4>
+              <p>CEO and Founder</p>
+            </CCol>
+            <CCol xs={12} sm={6} md={4}>
+              <h4>Myles Bunde Green</h4>
+              <p>Chief Technology Officer</p>
+            </CCol>
+            <CCol xs={12} sm={6} md={4}>
+              <h4>Christian Campbell</h4>
+              <p>The Man Him Self</p>
+            </CCol>
           </CRow>
+
+          <h2>Our Values</h2>
+          <p>
+            We believe in integrity, collaboration, and delivering value. These values guide everything we do, from
+            product development to customer support.
+          </p>
         </CCardBody>
       </CCard>
     </>
-  )
-}
+  );
+};
 
-export default Colors
+export default AboutUs;
