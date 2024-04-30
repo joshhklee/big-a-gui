@@ -13,28 +13,33 @@ const TeamMembers = () => {
   const team = [
     {
       name: 'Christian Campbell',
-      role: 'Back End Developer',
+      role: 'Software Developer',
       description: 'Oversees the back end functions to simplify the front end.',
     },
     {
       name: 'Josh Lee',
-      role: 'Lead GUI Developer',
+      role: 'Software Developer',
       description: 'Leads the development team, designs architecture, and ensures code quality.',
     },
     {
       name: 'Sam Schultz',
-      role: 'GUI Designer',
+      role: 'Software Developer',
       description: 'Responsible for the user experience design and testing user interfaces.',
     },
     {
       name: 'Grady Rowedder',
-      role: 'Quality Assurance Engineer',
-      description: 'Ensures the product meets quality standards through testing and validation.',
+      role: 'Software Developer',
+      description: 'Gets the job done whether there is a need in the server or client-side of operations.',
     },
     {
       name: 'Myles Bunde Green',
-      role: 'Lead Developer',
-      description: 'Over sees the project and makes sure everything is going to plan.',
+      role: 'System Adminstrator, Project Manager',
+      description: 'Oversees the project direction and ensures timelines are being met.',
+    },
+    {
+      name: 'Kyle Hoffman',
+      role: 'Field Validation',
+      description: 'Field Validation.',
     },
   ];
 
@@ -42,7 +47,6 @@ const TeamMembers = () => {
     <div>
       {team.map((member, index) => (
         <CCard key={index} className="mb-4">
-          <CCardHeader>{member.name}</CCardHeader>
           <CCardBody>
             <TeamMember {...member} />
           </CCardBody>

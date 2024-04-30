@@ -23,6 +23,11 @@ import {
 import CIcon from '@coreui/icons-react'
 
 import avatar8 from './../../assets/images/avatars/8.jpg'
+import { Link } from 'react-router-dom'
+
+const goToTeamMembers = () => {
+    Link('/AboutUs/teammembers'); // Use the correct path
+  };
 
 const AppHeaderDropdown = () => {
   return (
@@ -46,10 +51,11 @@ const AppHeaderDropdown = () => {
             This will take you to our Github Discussions Space
           </CBadge>
         </CDropdownItem>
-        <CDropdownItem href="#">
-          <CIcon icon={cilUser} className="me-2" />
-          About Us
-        </CDropdownItem>
+          <Link to="/AboutUs/teammembers" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <CDropdownItem>
+            <CIcon icon={cilUser} className="me-2" />About Us
+            </CDropdownItem>
+          </Link>
         <CDropdownDivider />
       </CDropdownMenu>
     </CDropdown>

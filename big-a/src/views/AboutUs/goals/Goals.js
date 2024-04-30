@@ -11,7 +11,6 @@ const AboutUs = () => {
       <CCard className="mb-4">
         <CCardHeader>
           About Us
-          <DocsLink href="https://www.yourcompany.com/about-us" />
         </CCardHeader>
         <CCardBody>
           <h2>Our Mission</h2>
