@@ -2,6 +2,7 @@ import React from 'react'
 import CIcon from '@coreui/icons-react'
 import {
   cilBell,
+  cilBook,
   cilCalculator,
   cilChartPie,
   cilCheck,
@@ -53,7 +54,6 @@ const _nav = [
     to: '/fieldvalidation',
     icon: <CIcon icon={cilCheck} customClassName="nav-icon" />,
   },
-  
 ]
 
 export default _nav
