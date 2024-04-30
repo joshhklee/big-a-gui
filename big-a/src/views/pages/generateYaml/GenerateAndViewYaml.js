@@ -11,7 +11,7 @@ function GenerateAndViewYaml() {
     setIsPosting(true);
 
     // Replace with your actual endpoint and data structure
-    const url = 'http://127.0.0.1:8000/EC2/download/2/';
+    const url = 'http://127.0.0.1:8000/EC2/download/2/'; 
     const postData = {
       // ... your data object to post
     };

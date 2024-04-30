@@ -26,10 +26,6 @@ const _nav = [
     name: 'Playbook',
     to: '/playbook',
     icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
-    badge: {
-      color: 'info',
-      text: 'YAML',
-    },
   },
   {
     component: CNavTitle,
@@ -38,13 +34,13 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Goals',
-    to: '/theme/colors',
+    to: '/AboutUs/Goals',
     icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Team Members',
-    to: '/theme/typography',
+    to: '/AboutUs/TeamMembers',
     icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
   },
   {
