@@ -2,9 +2,9 @@ import React from 'react'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const FieldValidation = React.lazy(() => import('./views/pages/fieldvalidation/FieldValidation'))
-const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
+const Goals = React.lazy(() => import('./views/AboutUs/goals/Goals'))
 const GenerateAndViewYaml = React.lazy(() => import('./views/pages/generateYaml/GenerateAndViewYaml'));
-const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
+const TeamMembers = React.lazy(() => import('./views/AboutUs/teammembers/TeamMembers'))
 
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
@@ -52,14 +52,13 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
-const routes = [
+const routes = [ 
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/playbook', name: 'Playbook', element: GenerateAndViewYaml },
   { path: '/fieldvalidation', name: 'FieldValidation', element: FieldValidation },
-  { path: '/theme', name: 'Theme', element: Colors, exact: true },
-  { path: '/theme/colors', name: 'Colors', element: Colors },
-  { path: '/theme/typography', name: 'Typography', element: Typography },
+  { path: '/AboutUs/goals', name: 'Goals', element: Goals},
+  { path: '/AboutUs/teammembers', name: 'TeamMembers', element: TeamMembers },
   { path: '/base', name: 'Base', element: Cards, exact: true },
   { path: '/base/accordion', name: 'Accordion', element: Accordion },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', element: Breadcrumbs },
